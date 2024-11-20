@@ -154,6 +154,9 @@
   padding-right: 60px;
 }
 .hero__first {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
   padding: 0 20px 20px 0;
   margin-right: 20px;
   text-align: right;
@@ -162,13 +165,29 @@
   justify-content: flex-end;
   height: 100%;
 }
+.hero__firstlast {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: right;
+}
 .hero__second {
+  flex-direction: column;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 20px;
   height: 100%;
   text-align: left;
+}
+.hero__secondlast {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: right;
 }
 .hero .divider {
   width: 1px;
