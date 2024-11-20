@@ -1,0 +1,34 @@
+[
+  {
+    "image": "avtodom.png",
+    "category": ["tl"]
+  },
+  {
+    "image": "removebg.png",
+    "category": ["dev"]
+  },
+  {
+    "image": "UCMS.png",
+    "category": ["devl"]
+  },
+  {
+    "image": "Silta.png",
+    "category": ["dev", "tl", "devl"]
+  },
+  {
+    "image": "TEK.png",
+    "category": ["tl"]
+  },
+  {
+    "image": "avtodom.png",
+    "category": ["dev"]
+  },
+  {
+    "image": "Silta.png",
+    "category": ["devl"]
+  },
+  {
+    "image": "UCMS.png",
+    "category": ["dev", "tl", "devl"]
+  }
+]
