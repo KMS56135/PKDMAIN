@@ -1,0 +1,120 @@
+.filters {
+  padding-bottom: 40px;
+  background-color: #111418;
+
+  &__inner {
+    display: flex;
+    justify-content: center; 
+    column-gap: 15px;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  &__group:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  &__checkbox {
+    display: flex;
+    position: relative;
+    height: 22px;
+  }
+
+  &__label {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: white;
+    margin-left: 20px;
+  }
+}
+
+.styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.styled-checkbox + label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.styled-checkbox + label::before {
+  display: flex;
+  align-items: center;
+  font-family: $font-family;
+  height: 22px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+}
+
+.styled-checkbox_all + label {
+  border-color: #5483fc;
+  color: white;
+}
+
+
+.styled-checkbox_all + label::before {
+  content: "All";
+  border: 1px solid #5483fc;
+}
+
+.styled-checkbox_all:checked + label::before {
+  background-color: #5483fc;
+  color: white;
+}
+
+.styled-checkbox_teamled + label {
+  border-color: #4c53f3;
+  color: white;
+}
+
+.styled-checkbox_teamled + label::before {
+  content: "TL";
+  border: 1px solid #4c53f3;
+}
+
+.styled-checkbox_teamled:checked + label::before {
+  background-color: #4c53f3;
+  color: white;
+}
+
+.styled-checkbox_developer + label {
+  border-color: #5483fc;
+  color: white;
+}
+
+.styled-checkbox_developer + label::before {
+  content: "DEV";
+  border: 1px solid #5483fc;
+}
+
+.styled-checkbox_developer:checked + label::before {
+  background-color: #5483fc;
+  color: white;
+}
+
+.styled-checkbox_leader-develover + label {
+  border-color: #ea5b0c;
+  color: white;
+}
+
+.styled-checkbox_leader-develover + label::before {
+  content: "DEVL";
+  border: 1px solid #ea5b0c;
+}
+
+.styled-checkbox_leader-develover:checked + label::before {
+  background-color: #ea5b0c;
+  color: white;
+}

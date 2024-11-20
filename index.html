@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/styles.css">
+  <script type="module" src="./main.js">
+    import Main from './main.js';
+    let main = new Main();
+    main.render();
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__title">
+      PAVEL <br>KVASHIN <br>DEVELOPMENT
+    </div>
+    <div class="header__menu-nav">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M2.16602 8.66667L12.709 3.39517C12.7992 3.35015 12.8986 3.32672 12.9993 3.32672C13.1001 3.32672 13.1995 3.35015 13.2897 3.39517L23.8327 8.66667M21.666 11.9167V20.5833C21.666 21.158 21.4377 21.7091 21.0314 22.1154C20.6251 22.5217 20.074 22.75 19.4993 22.75H6.49935C5.92471 22.75 5.37361 22.5217 4.96728 22.1154C4.56096 21.7091 4.33268 21.158 4.33268 20.5833V11.9167"
+          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="red" />
+      </svg>
+      <a class="link" href="">.Проекты</a>
+      <a class="link" href="">.Преимущества</a>
+      <a class="link" href="">.Блог</a>
+      <a class="link" href="">.Контакты</a>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero__first">
+      Внедрение <br>корпоративных <br>порталов
+    </div>
+    <div class="hero__second">
+      Разработка сайтов
+    </div>
+  </section>
+  <section class="partners">
+    <div class="filters">
+      <div class="filters__inner">
+        <div class="filters__group">
+          <div class="filters__checkbox">
+            <input class="styled-checkbox styled-checkbox_all" type="checkbox" id="all-checkbox">
+            <label for="all-checkbox"> <span class="filters__label">Все роли</span> </label>
+          </div>
+        </div>
+        <div class="filters__group">
+          <div class="filters__checkbox">
+            <input class="styled-checkbox styled-checkbox_teamled" type="checkbox" id="teamled-checkbox">
+            <label for="teamled-checkbox"><span class="filters__label">Тимлид</span></label>
+          </div>
+        </div>
+        <div class="filters__group">
+          <div class="filters__checkbox">
+            <input class="styled-checkbox styled-checkbox_developer" type="checkbox" id="developer-checkbox">
+            <label for="developer-checkbox"> <span class="filters__label">Разработчик</span></label>
+          </div>
+        </div>
+        <div class="filters__group">
+          <div class="filters__checkbox">
+            <input class="styled-checkbox styled-checkbox_leader-develover" type="checkbox" id="leader-develover-checkbox">
+            <label for="leader-develover-checkbox"><span class="filters__label">Лидер разработки</span></label>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </section>
+</body>
+
+</html>
