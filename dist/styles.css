@@ -6,10 +6,32 @@
   font-weight: 400;
 }
 .link {
+  color: #fff;
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
   padding: 40px;
+  text-align: right;
+}
+
+.link:hover {
+  transition: color 0.4s ease;
+  color: #5483fc;
+}
+
+.link:active {
+  color: #4c53f3;
+}
+
+.speclink {
+  color: #5483fc;
+  border: 2px solid #5483fc;
+  padding: 15px 30px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
   text-align: right;
 }
 
@@ -137,12 +159,27 @@
   height: 234px;
 }
 .header__title {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
   width: 345px;
   height: 114px;
 }
 .header__menu-nav {
   margin-left: auto;
   text-align: right;
+}
+.header__svg:hover {
+  transition: color 0.4s ease;
+  stroke: #5483fc;
+}
+.header__link {
+  text-decoration: none;
+}
+
+.header__menu-nav + svg:hover {
+  background-color: #5483fc;
 }
 
 .hero {

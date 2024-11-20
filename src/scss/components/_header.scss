@@ -7,6 +7,10 @@
     height: 234px;
 
     &__title {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 32px;
+        text-transform: uppercase;
         width: 345px;
         height: 114px;
     }
@@ -14,10 +18,21 @@
     &__menu-nav {
         margin-left: auto;
         text-align: right;
+    }   
+
+    &__svg:hover{
+        transition: color 0.4s ease;
+        stroke: #5483fc;
+    }
+
+    &__link{
+        text-decoration: none;
     }
 
 }
-
+.header__menu-nav + svg:hover{
+    background-color: #5483fc;
+}
 .hero {
     display: grid;
     grid-template-columns: auto 80px auto;
