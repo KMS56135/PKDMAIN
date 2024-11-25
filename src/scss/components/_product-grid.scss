@@ -1,8 +1,11 @@
-.product-grid {
-
+.partners-grid {
+  background-color: #111418;
 
   &__inner {
     display: grid;
+    grid-template-columns: repeat(4, 303px);
+    grid-template-rows: repeat(2, 240px);
+    justify-content: center;
     gap: 20px;
   }
 }
