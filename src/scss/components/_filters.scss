@@ -35,6 +35,10 @@
   }
 }
 
+.highlighted + label::before {
+  background-color: red !important; 
+}
+
 .styled-checkbox {
   position: absolute;
   opacity: 0;
