@@ -16,7 +16,7 @@
 
 <body>
 
-  <header class="header">
+  <!-- <header class="header">
     <div class="header__title">
       PAVEL <br>KVASHIN <br>DEVELOPMENT
     </div>
@@ -62,38 +62,52 @@
         <path d="M32 53.3334L16 37.3334M32 53.3334L48 37.3334M32 53.3334V25.3334M32 10.6667V17.3334" stroke="black" stroke-opacity="0.25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </div>
-  </section>
+  </section> -->
   <section class="partners">
     <div class="filters">
       <div class="filters__inner">
         <div class="filters__group">
           <div class="filters__checkbox">
-            <input class="styled-checkbox styled-checkbox_all" type="checkbox" id="all-checkbox" data-="allCheckbox">
+            <input class="styled-checkbox styled-checkbox_all" checked type="radio" name="options" id="all-checkbox">
             <label for="all-checkbox"> <span class="filters__label">Все роли</span> </label>
           </div>
         </div>
         <div class="filters__group">
           <div class="filters__checkbox">
-            <input class="styled-checkbox styled-checkbox_teamled" type="checkbox" id="teamled-checkbox">
+            <input class="styled-checkbox styled-checkbox_teamled" name="options" type="radio" id="teamled-checkbox">
             <label for="teamled-checkbox"><span class="filters__label">Тимлид</span></label>
           </div>
         </div>
         <div class="filters__group">
           <div class="filters__checkbox">
-            <input class="styled-checkbox styled-checkbox_developer" type="checkbox" id="developer-checkbox" data-develover-checkbox>
+            <input class="styled-checkbox styled-checkbox_developer" name="options" type="radio" id="developer-checkbox">
             <label for="developer-checkbox"> <span class="filters__label">Разработчик</span></label>
           </div>
         </div>
         <div class="filters__group">
           <div class="filters__checkbox">
-            <input class="styled-checkbox styled-checkbox_leader-develover" type="checkbox" id="leader-develover-checkbox" data-leader-checkbox>
+            <input class="styled-checkbox styled-checkbox_leader-develover" name="options" type="radio" id="leader-develover-checkbox">
             <label for="leader-develover-checkbox"><span class="filters__label">Лидер разработки</span></label>
           </div>
         </div>
       </div>
     </div>
     <div class="partners__cards">
-
+      <div class="partners-grid">
+        <button class="partners-grid__arrow partners-grid__arrow_left">
+          <svg class='arrow left' viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="arrow" d="M10.666 32L26.666 48M10.666 32L26.666 16M10.666 32H38.666M53.3327 32H46.666" stroke="white" stroke-opacity="0.25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M53.3327 32H46.666" stroke="#5483FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="partners-grid__inner"></div>
+        <button class="partners-grid__arrow partners-grid__arrow_right">
+          <svg class="arrow right" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="arrow" d="M53.334 32L37.334 48M53.334 32L37.334 16M53.334 32H25.334M10.6673 32H17.334" stroke="white" stroke-opacity="0.25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10.6673 32H17.334" stroke="#5483FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
 </body>

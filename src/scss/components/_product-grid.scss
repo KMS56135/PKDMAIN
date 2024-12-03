@@ -1,11 +1,118 @@
+.partners__cards {
+  display: flex;
+  justify-content: center;
+}
+
+
 .partners-grid {
-  background-color: #111418;
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  max-width: 100%;
+  position: relative;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 300px;
+    grid-template-rows: 240px 64px;
+    align-items: start;
+    row-gap: 20px;
+  }
 
   &__inner {
     display: grid;
-    grid-template-columns: repeat(4, 303px);
+    
     grid-template-rows: repeat(2, 240px);
-    justify-content: center;
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 2;
     gap: 20px;
+    scroll-behavior: smooth; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    overflow-x: scroll;
+    grid-auto-flow: column;
+    @media (max-width: 1500px) {
+      gap: 10px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1438px) {
+      max-width: 774px;
+      overflow-x: scroll;
+      gap: 20px
+    }
+
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      max-width: 520px;
+    }
+
+    @media (max-width: 767px) {
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 2;
+      max-width: 300px;
+      grid-template-rows: 240px;
+    }
+
+    @media (min-width: 0) and (max-width: 767px) {
+      grid-auto-flow: column;
+    }
+  }
+
+  &__inner::-webkit-scrollbar {
+     display: none; 
+  }
+
+  &__arrow {
+    height: 64px;
+    width: 64px; 
+    background-color: transparent;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+
+    &_left {
+      grid-row: 1 / -1;
+      grid-column: 1 / 2;
+    }
+
+    &_right {
+      grid-row: 1 / -1;
+      grid-column: 6 / span 1;
+    }
+
+    @media (min-width: 0) and (max-width: 767px) {
+      &_left {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1
+      }
+
+      &_right {
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+      }
+    }
   }
 }
+
+  .arrow {
+    stroke: white;
+    transition: stroke .4s ease-in-out; 
+  }
+
+.partners-grid__arrow:hover .arrow {
+   stroke: white;
+   stroke-opacity: 50%;
+}
+  
