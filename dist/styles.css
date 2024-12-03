@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '../../dist/modern-normalize.css';
 @font-face {
   font-family: "Golos Text";
@@ -321,6 +322,143 @@
 
 .card__category-item_devl {
   background-color: #ea5b0c;
+}
+
+.feedback {
+  display: flex;
+}
+.feedback__message {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 15px;
+}
+.feedback__contacts {
+  display: flex; /* Устанавливаем горизонтальное расположение */
+  justify-content: center; /* Центрируем блоки по горизонтали */
+  margin-top: 20px; /* Отступ между формой и контактами */
+}
+.feedback__contacts {
+  display: flex; /* Устанавливаем горизонтальное расположение */
+  justify-content: center; /* Центрируем блоки по горизонтали */
+  margin-top: 20px; /* Отступ между формой и контактами */
+}
+.feedback__desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #111;
+  margin-bottom: 50px;
+}
+.feedback__form-name {
+  padding: 16px 20px;
+  width: 530px;
+  height: 49px;
+  display: block;
+  margin-bottom: 20px;
+  background: #111418;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c1c1c1;
+}
+.feedback__form-email {
+  padding: 16px 20px;
+  width: 530px;
+  height: 49px;
+  display: block;
+  margin-bottom: 20px;
+  background: #111418;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c1c1c1;
+}
+.feedback__form-comment {
+  padding: 21px 20px;
+  width: 530px;
+  height: 142px;
+  display: block;
+  margin-bottom: 50px;
+  background: #111418;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c1c1c1;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feedback__line_one {
+  width: 2px;
+  height: 268px;
+  background-color: #111;
+}
+.feedback__line_two {
+  width: 2px;
+  height: 268px;
+  background-color: #111;
+}
+.feedback__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__whatsapp {
+  border: 2px solid red;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Центрируем содержимое по горизонтали */
+  width: 630px; /* Фиксированная ширина блока */
+  height: 112px; /* Фиксированная высота блока */
+}
+.feedback__telegram {
+  border: 2px solid red;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Центрируем содержимое по горизонтали */
+  width: 630px; /* Фиксированная ширина блока */
+  height: 112px; /* Фиксированная высота блока */
+}
+.feedback__line_three {
+  width: 2px;
+  height: 52px;
+  background-color: #111;
+}
+.feedback__line_four {
+  width: 2px;
+  height: 52px;
+  background-color: #111;
+}
+.feedback__whatsapp_text {
+  width: 419px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.feedback__telegram_text {
+  width: 419px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
