@@ -1,6 +1,5 @@
 .career {
   &__inner {
-    background-color: #111418;
     color: white;
     display: flex;
     justify-content: center;
@@ -29,40 +28,85 @@
   }
 
   &__about-me-title {
+    margin: 0;
     margin-bottom: 30px;
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff;
   }
 
-  &__about-me-description {}
+  &__about-me-description {
+    margin: 0;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: #c1c1c1;
+  }
 
-  &__about-me-image {}
+  &__about-me-image {
+    margin-bottom: 116px;
+    display: block;
+    align-self: self-end;
+  }
 
   &__about-me-button {
-
-  }
-
-  &__divider {
     display: flex;
-    gap: 20px;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 187px;
+    height: 52px;
   }
-  
-  &__divider-line {
-    width: 2px;
-    height: 213px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
-  }
-  
-  &__divider-circle {
-    width: 20px; /* Диаметр круга */
-    height: 20px; /* Диаметр круга */
-    border-radius: 50%; /* Делает элемент кругом */
-    border: 2px solid rgba(255, 255, 255, 0.05);
-  }
-  
 
   &__experience {
     width: 50%;
+  }
+
+  &__experience-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+
+  &__experience-group {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+  }
+
+  &__experience-number {
+    width: 130px;
+    display: flex;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+    
+  }
+
+  &__experience-plus {
+    color: #5483fc;
+  }
+
+  &__experience-years {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__experience-text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    margin: 14px 0;
   }
 }

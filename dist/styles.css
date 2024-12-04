@@ -458,11 +458,9 @@
 
 .partners {
   padding: 100px 0;
-  background-color: #111418;
 }
 
 .career__inner {
-  background-color: #111418;
   color: white;
   display: flex;
   justify-content: center;
@@ -484,28 +482,74 @@
   margin-bottom: 40px;
 }
 .career__about-me-title {
+  margin: 0;
   margin-bottom: 30px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
 }
-.career__divider {
+.career__about-me-description {
+  margin: 0;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #c1c1c1;
+}
+.career__about-me-image {
+  margin-bottom: 116px;
+  display: block;
+  align-self: self-end;
+}
+.career__about-me-button {
   display: flex;
-  gap: 20px;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-.career__divider-line {
-  width: 2px;
-  height: 213px;
-  border: 2px solid rgba(255, 255, 255, 0.05);
-}
-.career__divider-circle {
-  width: 20px; /* Диаметр круга */
-  height: 20px; /* Диаметр круга */
-  border-radius: 50%; /* Делает элемент кругом */
-  border: 2px solid rgba(255, 255, 255, 0.05);
+  width: 187px;
+  height: 52px;
 }
 .career__experience {
   width: 50%;
+}
+.career__experience-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 80px;
+  padding-bottom: 64px;
+}
+.career__experience-group {
+  display: flex;
+  gap: 30px;
+}
+.career__experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+.career__experience-number {
+  width: 130px;
+  display: flex;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #fff;
+}
+.career__experience-plus {
+  color: #5483fc;
+}
+.career__experience-years {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.career__experience-text {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  margin: 14px 0;
 }
 
 .feedback {
@@ -652,6 +696,25 @@
 
 .page {
   background-color: #0a1623;
+}
+
+.divider {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.divider__line {
+  width: 2px;
+  height: 213px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+.divider__circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.05);
 }
 
 /*# sourceMappingURL=styles.css.map */
