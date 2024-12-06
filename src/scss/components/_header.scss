@@ -1,124 +1,164 @@
 .header {
-    display: flex; 
+  position: relative;
+  z-index: 1;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+
+  &__author {
+    @include heading-style($heading-big-mobile);
+  }
+
+  &__menu-nav {
+    
+  }
+  
+  &__menu-nav-links {
+    display: flex;
     align-items: center;
-    padding-left: 245px;
-    padding-right: 60px;
-    max-width: 1440px;
-    height: 234px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 
-    &__title {
-        font-family: $font-family;
-        font-weight: 700;
-        font-size: 32px;
-        text-transform: uppercase;
-        width: 345px;
-        height: 114px;
+  &__svg {
+    transition: .4s ease;
+    stroke: $color-white;
+
+    &:hover {
+      stroke: $color-primary;
     }
 
-    &__menu-nav {
-        margin-left: auto;
-        text-align: right;
-    }   
-
-    &__svg:hover{
-        transition: color 0.4s ease;
-        stroke: #5483fc;
-    }
-
-    &__link{
-        text-decoration: none;
-    }
-
-}
-.header__menu-nav + svg:hover{
-    background-color: #5483fc;
-}
-
-.hero {
-    width: 1440px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); // Три равные колонки
-    grid-template-rows: auto auto; // Два ряда: содержимое + стрелка
-    column-gap: 80px;
-    align-items: start; // Выравнивание элементов по верхнему краю
-  
-    &__first {
-      padding: 260px 0px 0px 0px;
-      width: 630px;
-      height: 560px;
-      font-family: $font-family;
-      font-weight: 700;
-      font-size: 60px;
-      text-align: right;
-      color: #111;
-    }
-  
-    &__small-first {
-      font-family: var(--font-family);
-      font-weight: 400;
-      font-size: 24px;
-      text-align: right;
-      color: #111;
-    }
-  
-    &__line {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    &__line_one {
-      background-color: #111;
-      width: 2px;
-      height: 56px;
-    }
-  
-    &__circle {
-      margin: 20px 0;
-      border-radius: 100%;
-      border: 2px solid #111;
-      width: 28px;
-      height: 28px;
-    }
-  
-    &__line_two {
-      background-color: #111;
-      width: 2px;
-      height: 155px;
-    }
-  
-    &__line_three {
-      background-color: #111;
-      width: 2px;
-      height: 229px;
-    }
-  
-    &__second {
-      padding: 50px 0px 0px 0px;
-      width: 630px;
-      height: 560px;
-      font-family: $font-family;
-      font-weight: 700;
-      font-size: 60px;
-      color: #111;
-    }
-  
-    &__small-second {
-      font-family: $font-family;
-      font-weight: 400;
-      font-size: 24px;
-      color: #111;
-    }
-  
-    &__arrow {
-      grid-column: 1 / -1; // Растянуть на всю ширину (все 3 столбца)
-      grid-row: 2; // Второй ряд
-      height: 150px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    &:active {
+      stroke: $color-secondary;
     }
   }
+
+}
+
+// .header {
+//     display: flex; 
+//     align-items: center;
+//     padding-left: 245px;
+//     padding-right: 60px;
+//     max-width: 1440px;
+//     height: 234px;
+
+//     &__title {
+//         font-family: $font-family;
+//         font-weight: 700;
+//         font-size: 32px;
+//         text-transform: uppercase;
+//         width: 345px;
+//         height: 114px;
+//     }
+
+//     &__menu-nav {
+//         margin-left: auto;
+//         text-align: right;
+//     }   
+
+//     &__svg:hover{
+//         transition: color 0.4s ease;
+//         stroke: #5483fc;
+//     }
+
+//     &__link{
+//         text-decoration: none;
+//     }
+
+// }
+// .header__menu-nav + svg:hover{
+//     background-color: #5483fc;
+// }
+
+// .hero {
+//     width: 1440px;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr); // Три равные колонки
+//     grid-template-rows: auto auto; // Два ряда: содержимое + стрелка
+//     column-gap: 80px;
+//     align-items: start; // Выравнивание элементов по верхнему краю
+  
+//     &__first {
+//       padding: 260px 0px 0px 0px;
+//       width: 630px;
+//       height: 560px;
+//       font-family: $font-family;
+//       font-weight: 700;
+//       font-size: 60px;
+//       text-align: right;
+//       color: #111;
+//     }
+  
+//     &__small-first {
+//       font-family: var(--font-family);
+//       font-weight: 400;
+//       font-size: 24px;
+//       text-align: right;
+//       color: #111;
+//     }
+  
+//     &__line {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//     }
+  
+//     &__line_one {
+//       background-color: #111;
+//       width: 2px;
+//       height: 56px;
+//     }
+  
+//     &__circle {
+//       margin: 20px 0;
+//       border-radius: 100%;
+//       border: 2px solid #111;
+//       width: 28px;
+//       height: 28px;
+//     }
+  
+//     &__line_two {
+//       background-color: #111;
+//       width: 2px;
+//       height: 155px;
+//     }
+  
+//     &__line_three {
+//       background-color: #111;
+//       width: 2px;
+//       height: 229px;
+//     }
+  
+//     &__second {
+//       padding: 50px 0px 0px 0px;
+//       width: 630px;
+//       height: 560px;
+//       font-family: $font-family;
+//       font-weight: 700;
+//       font-size: 60px;
+//       color: #111;
+//     }
+  
+//     &__small-second {
+//       font-family: $font-family;
+//       font-weight: 400;
+//       font-size: 24px;
+//       color: #111;
+//     }
+  
+//     &__arrow {
+//       grid-column: 1 / -1; // Растянуть на всю ширину (все 3 столбца)
+//       grid-row: 2; // Второй ряд
+//       height: 150px;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
 
   

@@ -1,0 +1,33 @@
+// MIXINS
+@mixin link-styles($text-color: $color-white, $font-weight: $semibold, $text-size: $text-base) {
+  display: block;
+  color: $text-color;
+  text-decoration: none;
+  transition: 0.4s ease;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $text-size;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: $color-secondary;
+  }
+}
+
+@mixin heading-style($size, $font-weight: $bold) {
+   font-family: $font-family;
+   font-size: $size; 
+   font-weight: $bold;
+   color: $color-white;
+  //  margin-bottom: $spacing-md;
+}
+
+@mixin card-styles($border-color: $color-gray-light) {
+  border: 2px solid $border-color;
+  padding: 80px 40px;
+  position: relative;
+}
+

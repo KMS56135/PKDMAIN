@@ -1,32 +1,29 @@
 
-.link{
-    color: #fff;
-    font-family: $font-family;
-    font-weight: 600;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 40px;
-    text-align: right;
-}
+.link {
+    @include link-styles();
 
-.link:hover {
-    transition: color 0.4s ease;
-    color: #5483fc;
-}
+    &_speclink {
+        height: 52px;
+        padding: 15px 30px;
+        border: 2px solid $color-primary;
+        color: $color-primary;
 
-.link:active {
-    color: #4c53f3;
+        &:hover {
+            color: $color-secondary;
+            border: 2px solid $color-secondary;
+        }
+    }
 }
 
 
 
-.speclink{
-    color: #5483fc;
-    border: 2px solid #5483fc;
-    padding: 15px 30px;
-    font-family: $font-family;
-    font-weight: 600;
-    font-size: 18px;
-    text-decoration: none;
-    text-align: right;
-}
+// .speclink {
+//     color: #5483fc;
+//     
+//     padding: 15px 30px;
+//     font-family: $font-family;
+//     font-weight: 600;
+//     font-size: 18px;
+//     text-decoration: none;
+//     text-align: right;
+// }

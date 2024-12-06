@@ -3,17 +3,18 @@
 @import 'base/variable';
 @import 'base/typografy';
 @import 'base/mixins';
-@import 'components/link';
 
+@import 'components/link';
+@import "components/partner";
 @import 'components/filters';
 @import 'components/header';
 @import 'components/product-grid';
 @import 'components/card';
-@import 'components/partners';
 @import 'components/career';
-@import 'components/feedback';
-@import 'components/container';
-@import 'components/page';
-@import 'components/divider';
+@import 'components/feedbacks';
+@import 'components/containers';
+@import 'components/hero';
+// @import "components/page";
+// @import 'components/divider';
 
 

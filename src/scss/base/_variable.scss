@@ -1,6 +1,7 @@
+// FONT FAMILY
 $font-family: "Golos Text", sans-serif;
 
-// FONT SIZE
+// FONT SIZES
 $text-xs: 13px;
 $text-sm: 14px;
 $text-base: 18px;
@@ -9,3 +10,20 @@ $heading-mobile: 30px;
 $heading-big-mobile: 32px;
 $heading-tablet: 48px;
 $heading-laptop-desktop: 60px;
+
+
+// FONT WEIGHT 
+$semibold: 600;
+$bold: 700;
+
+// COLORS
+$color-white: #ffffff;
+$color-black: #111;
+$color-dark-bg: #0a1623;
+$color-light-bg: #111418;
+$color-primary: #5483fc;
+$color-secondary: #4c53f3;
+$color-accent: #ea5b0c;
+$color-gray-light: rgba(255, 255, 255, 0.05);
+$color-gray-dark: rgba(255, 255, 255, 0.1);
+$color-gray-medium: #c1c1c1;

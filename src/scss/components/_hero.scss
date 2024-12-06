@@ -1,0 +1,16 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    &__video {
+        height: 904px;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        width: 100%;
+        // height: 100%; 
+        object-fit: cover; 
+        transform: scale(1.3);
+    }
+}
