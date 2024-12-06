@@ -15,3 +15,245 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Can't find stylesheet to import.\a    \2577 \a 12 \2502  @import 'components/partners';\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src\\scss\\main.scss 12:9  root stylesheet";
 }
+<<<<<<< HEAD
+@media (min-width: 1024px) and (max-width: 1438px) {
+  .card {
+    max-width: 244px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    max-width: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .card {
+    min-width: 100%;
+  }
+}
+
+.card__category-item_dev {
+  background-color: #5483fc;
+}
+
+.card__category-item_tl {
+  background-color: #4c53f3;
+}
+
+.card__category-item_devl {
+  background-color: #ea5b0c;
+}
+
+.partners {
+  padding: 100px 0;
+  background-color: #111418;
+}
+
+.career__inner {
+  background-color: #111418;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 40px 0;
+}
+.career__about-me {
+  width: 50%;
+}
+.career__about-me-inner {
+  padding: 50px 0;
+}
+.career__about-me-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  margin-bottom: 40px;
+}
+.career__about-me-title {
+  margin-bottom: 30px;
+}
+.career__divider {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.career__divider-line {
+  width: 2px;
+  height: 213px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+.career__divider-circle {
+  width: 20px; /* Диаметр круга */
+  height: 20px; /* Диаметр круга */
+  border-radius: 50%; /* Делает элемент кругом */
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+.career__experience {
+  width: 50%;
+}
+
+.feedback {
+  display: flex;
+}
+.feedback__message {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #111;
+  margin-bottom: 15px;
+}
+.feedback__contacts {
+  display: flex; /* Устанавливаем горизонтальное расположение */
+  justify-content: center; /* Центрируем блоки по горизонтали */
+  margin-top: 20px; /* Отступ между формой и контактами */
+}
+.feedback__contacts {
+  display: flex; /* Устанавливаем горизонтальное расположение */
+  justify-content: center; /* Центрируем блоки по горизонтали */
+  margin-top: 20px; /* Отступ между формой и контактами */
+}
+.feedback__desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #111;
+  margin-bottom: 50px;
+}
+.feedback__form-name {
+  padding: 16px 20px;
+  width: 530px;
+  height: 49px;
+  display: block;
+  margin-bottom: 20px;
+  background: #111418;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c1c1c1;
+}
+.feedback__form-email {
+  padding: 16px 20px;
+  width: 530px;
+  height: 49px;
+  display: block;
+  margin-bottom: 20px;
+  background: #111418;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c1c1c1;
+}
+.feedback__form-comment {
+  padding: 21px 20px;
+  width: 530px;
+  height: 142px;
+  display: block;
+  margin-bottom: 50px;
+  background: #111418;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c1c1c1;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feedback__line_one {
+  width: 2px;
+  height: 268px;
+  background-color: #111;
+}
+.feedback__line_two {
+  width: 2px;
+  height: 268px;
+  background-color: #111;
+}
+.feedback__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__whatsapp {
+  border: 2px solid red;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Центрируем содержимое по горизонтали */
+  width: 630px; /* Фиксированная ширина блока */
+  height: 112px; /* Фиксированная высота блока */
+}
+.feedback__telegram {
+  border: 2px solid red;
+  padding: 30px 40px;
+  margin-bottom: 20px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Центрируем содержимое по горизонтали */
+  width: 630px; /* Фиксированная ширина блока */
+  height: 112px; /* Фиксированная высота блока */
+}
+.feedback__line_three {
+  width: 2px;
+  height: 52px;
+  background-color: #111;
+}
+.feedback__line_four {
+  width: 2px;
+  height: 52px;
+  background-color: #111;
+}
+.feedback__whatsapp_text {
+  width: 419px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.feedback__telegram_text {
+  width: 419px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(70, 206, 230);
+  height: 80px;
+}
+.footer img {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.footer__content {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+/*# sourceMappingURL=styles.css.map */
+=======
+>>>>>>> origin/main
