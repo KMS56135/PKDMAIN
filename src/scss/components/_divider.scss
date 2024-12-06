@@ -1,0 +1,20 @@
+.divider {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  &__line {
+    width: 2px;
+    height: 213px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  &__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+  }
+}
