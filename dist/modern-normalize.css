@@ -16,6 +16,9 @@ Use a better box model (opinionated).
 }
 
 
+html {
+	scroll-behavior: smooth;
+}
 
 /*
 Sections

@@ -10,6 +10,7 @@
 
   &__author {
     @include heading-style($heading-big-mobile);
+    text-transform: uppercase;
   }
 
   &__menu-nav {

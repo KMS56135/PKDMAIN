@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(70, 206, 230);
+    height: 80px;
+
+    img {
+        margin-bottom: 30px; 
+        margin-top: 50px;
+    }
+
+    &__content {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 32px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #111;
+    }
+}

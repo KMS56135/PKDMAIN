@@ -14,10 +14,10 @@
 </head>
 
 <body>
-  <div class="page" style="background-color: black">
+  <div class="page">
     <section class="hero">
       <video autoplay muted loop class="hero__video">
-        <source src="./assets/video/videoplayback.mp4" type="video/mp4">
+        <source src="./assets/video/bg.mp4" type="video/mp4">
       </video>
       <div class="container">
         <header class="header">
@@ -43,6 +43,36 @@
               </nav>
             </div>
           </header>
+          <div class="hero__content">
+            <div class="hero__corporate-portals">
+              <h2 class="hero__title">
+                Внедрение
+                корпоративных
+                порталов
+              </h2>
+              <p class="hero__subtitle">
+                Bitrix24
+              </p>
+            </div>
+            <div class="hero__divider divider">
+              <div class="hero__line hero__line_first divider__line"></div>
+              <div class="divider__circle"></div>
+              <div class="hero__line hero__line_second divider__line"></div>
+              <div class="divider__circle"></div>
+              <div class="hero__line hero__line_third divider__line"></div>
+              <a class="hero__arrow" href="#partners-section">
+                <svg width="64" height="60" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M32 53.3334L16 37.3334M32 53.3334L48 37.3334M32 53.3334V25.3334M32 10.6667V17.3334" stroke="white" stroke-opacity="0.25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            <div class="hero__web-development">
+              <h2 class="hero__title">
+                Разработка сайтов 
+              </h2>
+              <p class="hero__subtitle">1C_Bitrix</p>
+            </div>
+          </div>
         </div>
       </section>
       <div class="container">
@@ -72,7 +102,7 @@
           </svg>
         </div>
       </section> -->
-      <section class="partners">
+      <section class="partners" id="partners-section">
         <div class="filters">
           <div class="filters__inner">
             <div class="filters__group">
@@ -254,7 +284,13 @@
         </div>
       </section>
     </div>
-  </div>
+  </section>
+  <footer class="footer" style="background-color: rgb(70, 206, 230)";>
+    <img src="./assets/image/arrow.png" alt="arrow" />
+    <div class="footer__content">
+      PAVEL KVASHIN DEVELOPMENT
+    </div>
+  </footer>
 </body>
 
 </html>
