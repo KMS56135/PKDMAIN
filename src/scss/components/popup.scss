@@ -1,0 +1,25 @@
+.popup {
+    position: absolute;
+    right:  -1px;
+    top: 145px;
+    z-index: 100;
+    background: rgba(18, 19, 18, 0.9);
+    width: 202px;
+    height: 250px;
+    padding: 30px;
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__link {
+        display: block;
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 18px;
+        color: $color-white;
+        text-decoration: none;
+    }
+}

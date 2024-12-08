@@ -14,7 +14,9 @@
   }
 
   &__menu-nav {
-    
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
   }
   
   &__menu-nav-links {
@@ -22,6 +24,10 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__svg {
@@ -37,6 +43,14 @@
     }
   }
 
+  &__link {
+    max-width: 152px;
+    position: relative;
+
+    @media (max-width: 1024px) {
+      max-width: 117px;
+    }
+  }
 }
 
 // .header {

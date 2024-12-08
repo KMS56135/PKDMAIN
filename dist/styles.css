@@ -185,11 +185,21 @@
   color: #ffffff;
   text-transform: uppercase;
 }
+.header__menu-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
 .header__menu-nav-links {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+}
+@media (max-width: 1024px) {
+  .header__menu-nav-links {
+    display: none;
+  }
 }
 .header__svg {
   transition: 0.4s ease;
@@ -200,6 +210,15 @@
 }
 .header__svg:active {
   stroke: #4c53f3;
+}
+.header__link {
+  max-width: 152px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .header__link {
+    max-width: 117px;
+  }
 }
 
 .partners__cards {
@@ -387,6 +406,9 @@
   gap: 80px;
   padding: 40px 0;
 }
+.career__link {
+  max-width: 187px;
+}
 .career__about-me {
   width: 50%;
 }
@@ -500,7 +522,6 @@
   justify-content: center;
   gap: 80px;
   position: relative;
-  z-index: 1;
 }
 .hero__corporate-portals {
   width: 630px;
@@ -710,6 +731,16 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+@media (max-width: 1919px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
 
 .page {
   background-color: #0a1623;
@@ -753,6 +784,30 @@
   text-transform: uppercase;
   text-align: center;
   color: #111;
+}
+
+.popup {
+  position: absolute;
+  right: -1px;
+  top: 145px;
+  z-index: 100;
+  background: rgba(18, 19, 18, 0.9);
+  width: 202px;
+  height: 250px;
+  padding: 30px;
+}
+.popup__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.popup__link {
+  display: block;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

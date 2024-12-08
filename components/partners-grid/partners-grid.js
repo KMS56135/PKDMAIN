@@ -1,5 +1,4 @@
 import PartnerCard from "../card/card.js";
-import createElement from "../../assets/lib/create-element.js";
 
 export default class PartnerGrid {
   #filters = {}
@@ -23,7 +22,6 @@ export default class PartnerGrid {
   #updateProductGrid() {
     const productGridInner = document.querySelector('.partners-grid__inner');
     productGridInner.innerHTML = '';
-    console.log(productGridInner)
     const filteredCards = this.partners.filter(partner => this.#partnerCardFiltering(partner));
 
     filteredCards.forEach(partner => {
@@ -91,7 +89,6 @@ export default class PartnerGrid {
 
   #addArrowsListeners() {
     const arrows = document.querySelectorAll('.arrow');
-    console.log(arrows)
     arrows.forEach(arrow => {
       arrow.addEventListener('click', this.#handleArrowsClick.bind(this));
     })
@@ -132,10 +129,6 @@ export default class PartnerGrid {
 
       partnersGridInner.scrollBy({ left: -300});;
     }
-
-
-
   }
-  
 }
 
