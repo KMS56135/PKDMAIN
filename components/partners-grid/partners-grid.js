@@ -53,17 +53,13 @@ export default class PartnerGrid {
     return false;
   }
 
-  // Обработчик переключения радио кнопок
   #handleRadioChange(event) {
     const selectedRadioButton = event.target;
   
-    // Найти все группы фильтров
     const allFiltersGroups = document.querySelectorAll('.filters__group');
     
-    // Удалить класс 'active' из всех групп фильтров
     allFiltersGroups.forEach(group => group.classList.remove('active'));
-  
-    // Добавить класс 'active' к выбранной группе фильтров
+
     const filtersGroup = selectedRadioButton.closest('.filters__group');
     if (filtersGroup) {
       filtersGroup.classList.add('active');
