@@ -10,6 +10,10 @@
         margin-bottom: 15px;
     }
 
+    &__send{
+        max-width: 161px;
+    }
+
     &__contacts {
         display: flex; /* Устанавливаем горизонтальное расположение */
         justify-content: center; /* Центрируем блоки по горизонтали */
@@ -24,7 +28,7 @@
     }
 
     &__desc{
-        font-family: var(--font-family);
+        font-family: $font-family;
         font-weight: 400;
         font-size: 18px;
         line-height: 156%;

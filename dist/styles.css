@@ -774,6 +774,9 @@ summary {
   color: #fff;
   margin-bottom: 15px;
 }
+.feedback__send {
+  max-width: 161px;
+}
 .feedback__contacts {
   display: flex; /* Устанавливаем горизонтальное расположение */
   justify-content: center; /* Центрируем блоки по горизонтали */
@@ -785,7 +788,7 @@ summary {
   margin-top: 20px; /* Отступ между формой и контактами */
 }
 .feedback__desc {
-  font-family: var(--font-family);
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
@@ -963,7 +966,6 @@ summary {
   color: #111;
 }
 
-<<<<<<< HEAD
 .popup {
   position: absolute;
   right: -1px;
@@ -986,7 +988,8 @@ summary {
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
-=======
+}
+
 .blog {
   display: flex;
   flex-wrap: wrap;
@@ -1001,9 +1004,9 @@ summary {
   padding: 0;
   color: white;
   width: 337px;
-  height: 420px;
   box-sizing: border-box;
   position: relative;
+  padding-bottom: 40px;
 }
 .blog__card-image {
   width: 100%;
@@ -1017,9 +1020,10 @@ summary {
   font-size: 18px;
   line-height: 135%;
   color: #fff;
+  font-family: "Golos Text", sans-serif;
 }
 .blog__card-title:nth-of-type(2), .blog__card-title:nth-of-type(3) {
-  font-family: var(--font-family);
+  font-family: "Golos Text", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
@@ -1063,7 +1067,6 @@ summary {
   margin-bottom: auto;
   font-family: "Golos Text", sans-serif;
   color: #fff;
->>>>>>> blog
 }
 
 /*# sourceMappingURL=styles.css.map */
