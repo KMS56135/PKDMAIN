@@ -348,6 +348,7 @@ summary {
 }
 .header__inner {
   display: flex;
+  align-items: start;
   justify-content: space-between;
   padding: 60px 0;
 }
