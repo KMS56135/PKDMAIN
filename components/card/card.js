@@ -21,7 +21,7 @@ export default class PartnerCard  {
           </div>
         </div>
         <div class="card__body">
-          <img class="card__image" src="../../assets/image/${image}" />
+          <img class="card__image" src="./assets/image/${image}" />
         </div>
       </div>
     `;
