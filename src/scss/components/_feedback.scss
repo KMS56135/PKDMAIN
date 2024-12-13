@@ -1,165 +1,138 @@
-.feedback{
-    display: flex;
-    justify-content: center;
+.feedback {
 
-    &__message{
-        font-family: $font-family;
-        font-weight: 600;
-        font-size: 32px;
-        color: #fff;
+    &__inner {
+        padding: 20px 0;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 40px;
+    }
+
+    &__form {
+        padding: 50px;
+        flex-grow: 1;
+        flex-basis: 50%;
+        background-color: $color-gray-light;
+    }
+
+    &__form-title {
+        @include heading-style(32px, 700);
         margin-bottom: 15px;
     }
 
-    &__send{
-        max-width: 161px;
-    }
-
-    &__contacts {
-        display: flex; /* Устанавливаем горизонтальное расположение */
-        justify-content: center; /* Центрируем блоки по горизонтали */
-        margin-top: 20px; /* Отступ между формой и контактами */
-    }
-    
-
-    &__contacts {
-        display: flex; /* Устанавливаем горизонтальное расположение */
-        justify-content: center; /* Центрируем блоки по горизонтали */
-        margin-top: 20px; /* Отступ между формой и контактами */
-    }
-
-    &__desc{
+    &__form-desc {
         font-family: $font-family;
         font-weight: 400;
         font-size: 18px;
         line-height: 156%;
-        color: #c1c1c1;;
+        color: $color-gray-medium;
         margin-bottom: 50px;
     }
 
-    &__form-name{
-        padding: 16px 20px;
-        width: 530px;
-        height: 49px;
-        display: block;
-        margin-bottom: 20px;
-        background: #111418;
-        font-family: $font-family;
-        font-weight: 400;
-        font-size: 14px;
-        color: #c1c1c1;
-    }
-
-    &__form-email{
-        padding: 16px 20px;
-        width: 530px;
-        height: 49px;
-        display: block;
-        margin-bottom: 20px;
-        background: #111418;
-        font-family: $font-family;
-        font-weight: 400;
-        font-size: 14px;
-        color: #c1c1c1;
-    }
-
-    &__form-comment{
-        padding: 21px 20px;
-        width: 530px;
-        height: 142px;
-        display: block;
-        margin-bottom: 50px;
-        background: #111418;
-        font-family: $font-family;
-        font-weight: 400;
-        font-size: 14px;
-        color: #c1c1c1;
-    }
-
-    &__form{
-        padding: 50px;
-        width: 630px;
-        height: 641px;
-        background: rgba(255, 255, 255, 0.05);
+    &__form-content {
         display: flex;
         flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    &__form-input {
+        font-family: $font-family;
+        font-weight: $normal;
+        font-size: $text-sm;
+        color: $color-gray-medium;
+        width: 100%;
+        padding: 16px 20px;
+        background-color: $color-black;
+        border: none;
+        
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__form-comment {
+        padding: 21px 20px;
+        font-family: $font-family;
+        font-weight: $normal;
+        font-size: $text-sm;
+        color: $color-gray-medium;
+        background-color: $color-black;
+        border: none;
+        width: 100%;
+        min-height: 142px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__form-send {
+        max-width: 161px;
+    }
+
+    
+    &__divider {
+        width: 100%;
+        max-width: 100px;
+        flex-shrink: 0;
     }
     
-    &__line{
+    &__contacts {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        row-gap: 20px;
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+
+    &__whatsapp {
+        height: 112px;
+        display: flex;
         align-items: center;
-    }
-
-    &__line_one{
-        width: 2px;
-        height: 268px;
-        background: rgba(255, 255, 255, 0.05);
-    }
-
-    &__line_two{
-        width: 2px;
-        height: 268px;
-        background: rgba(255, 255, 255, 0.05);
-    }
-
-    &__contacts{
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__whatsapp{
-        border: 2px solid rgba(255, 255, 255, 0.1);
+        border: 2px solid $color-gray-dark;
         padding: 30px 40px;
-        margin-bottom: 20px;
-        gap: 40px;
-        display: flex;
-        flex-direction: row;
-        align-items: center; /* Центрируем содержимое по горизонтали */
-        width: 630px; /* Фиксированная ширина блока */
-        height: 112px; /* Фиксированная высота блока */
     }
-    
+
+    &__whatshap-line {
+        height: 52px;
+        width: 1px;
+        max-height: 52px;
+        margin: 0 40px;
+    }
+    &__telegram-line {
+        height: 52px;
+        width: 1px;
+        max-height: 52px;
+        margin: 0 40px;
+    }
+
+    &__text {
+        font-family: $font-family;
+        font-weight: $normal;
+        font-size: 18px;
+        text-align: center;
+        color: $color-white;
+        margin: 0 auto;
+    }
+
+
     &__telegram {
-        border: 2px solid rgba(255, 255, 255, 0.1);
-        padding: 30px 40px;
-        margin-bottom: 20px;
-        gap: 40px;
+        height: 112px;
         display: flex;
-        flex-direction: row;
-        align-items: center; /* Центрируем содержимое по горизонтали */
-        width: 630px; /* Фиксированная ширина блока */
-        height: 112px; /* Фиксированная высота блока */
+        align-items: center;
+        border: 2px solid $color-gray-dark;
+        padding: 30px 40px;
     }
 
-    &__line_three{
-        width: 2px;
-        height: 52px;
-        background-color: #111;
+    &__line {
+        flex-grow: 1;
     }
 
-    &__line_four{
-        width: 2px;
-        height: 52px;
-        background-color: #111;
-    }
-
-    &__whatsapp_text{
-        width: 419px;
-        //height: 52px;
-        font-family: $font-family;
-        font-weight: 400;
-        font-size: 18px;
-        text-align: center;
-        color: #fff;
-    }
-
-    &__telegram_text{
-        width: 419px;
-        font-family: $font-family;
-        font-weight: 400;
-        font-size: 18px;
-        text-align: center;
-        color: #fff;
+    &__arrow {
+        flex-shrink: 0;
     }
 }

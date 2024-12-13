@@ -60,25 +60,29 @@
 
     @keyframes blinkAnimation {
         0% {
-            stroke-opacity: 0.25;
+            stroke-opacity: 0.55;
         }
-
         25% {
-            stroke-opacity: 1;
+            stroke-opacity: 0.65;
         }
         50% {
+            stroke-opacity: 0.80;
+        }
+        75% {
+            stroke-opacity: 0.90;
+        }
+        100% {
             stroke-opacity: 1;
         }
-      }
-      
+    }
+    
     &__arrow {
         position: absolute;
         bottom: -149px;
         z-index: 10;
-
-
+    
         path {
-            animation: blinkAnimation 2s infinite;
+            animation: blinkAnimation 2s infinite ease-in-out;
         }
     }
       
